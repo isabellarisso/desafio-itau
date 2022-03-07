@@ -6,15 +6,60 @@
     <meta name="description" content="This is the AMP Boilerplate.">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!--  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script> -->
+    <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async></script>
+
     <!-- Import other AMP Extensions here -->
     <style amp-custom>
     /* Add your styles here */
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
     <link rel="canonical" href="https://ww2.itau.cl/personas">
     <title>Personas - Itaú Chile</title>
+
   </head>
   <body>
-    <h1>Hello World</h1>
+    <!-- PREHEADER -->
+    <header>
+    <div class="preheader">
+      <button class="personas-btn" ><a href="https://ww2.itau.cl/personas">Personas</a></button>
+      <button class="empresas-btn"><a href="https://ww2.itau.cl/empresas">Empresas</a></button>
+    </div>
+      <nav class="header-bar">
+        <ul>
+          <li class="headernav">
+            <amp-accordion layout="container" disable-session-states class="dropdown">
+              <section>
+                <header>Accesos directos</header>
+                  <ul class="dropdown-item">
+                    <li><a href="https://www.zonaestudiantes.cl/">Portal de créditos CAE</a></li>
+                  </ul>
+              </section>
+            </amp-accordion>
+          </li>
+          <li><a href="https://ww2.itau.cl/personas/contactanos"> Contáctanos</a></li>
+          <li><a href="https://ww2.itau.cl/personas/sucursales">Sucursales</a></li>
+        </ul>
+      </nav>
+  </header>
+  <!-- HEADER -->
+
+      <!-- FOOTER RRSS -->
+      <section id="redes-sociales-footer" data-section-name="Redes Sociales">
+		      <ul>
+            <li><a target="_blank" rel="noreferrer" href="https://es-la.facebook.com/itauchile">Facebook</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://twitter.com/itauchile">Twitter</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://cl.linkedin.com/company/itauchile">LinkedIn</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/itauchile">Instagram</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@itauchile?lang=es">Tiktok</a></li>
+          </ul>
+      </section>
+      
+
   </body>
 </html>
+
+
+
+
