@@ -1,65 +1,306 @@
 <!doctype html>
 <html ⚡>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="This is the AMP Boilerplate.">
-    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <!--  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script> -->
-    <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async></script>
 
-    <!-- Import other AMP Extensions here -->
-    <style amp-custom>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="This is the AMP Boilerplate.">
+  <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async></script>
+  
+
+  <!-- Import other AMP Extensions here -->
+  <style amp-custom>
     /* Add your styles here */
+  </style>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
     </style>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  </noscript>
 
-    <link rel="canonical" href="https://ww2.itau.cl/personas">
-    <title>Personas - Itaú Chile</title>
+  <link rel="canonical" href="https://ww2.itau.cl/personas">
+  <title>Personas - Itaú Chile</title>
 
-  </head>
-  <body>
-    <!-- PREHEADER -->
-    <header>
+</head>
+
+<body>
+
+
+  <!-- NAVBAR+MENU HAMBURGUESA -->
+  <header>
     <div class="preheader">
-      <button class="personas-btn" ><a href="https://ww2.itau.cl/personas">Personas</a></button>
+      <button class="personas-btn"><a href="https://ww2.itau.cl/personas">Personas</a></button>
       <button class="empresas-btn"><a href="https://ww2.itau.cl/empresas">Empresas</a></button>
     </div>
-      <nav class="header-bar">
-        <ul>
-          <li class="headernav">
-            <amp-accordion layout="container" disable-session-states class="dropdown">
-              <section>
-                <header>Accesos directos</header>
-                  <ul class="dropdown-item">
-                    <li><a href="https://www.zonaestudiantes.cl/">Portal de créditos CAE</a></li>
-                  </ul>
-              </section>
-            </amp-accordion>
-          </li>
-          <li><a href="https://ww2.itau.cl/personas/contactanos"> Contáctanos</a></li>
-          <li><a href="https://ww2.itau.cl/personas/sucursales">Sucursales</a></li>
-        </ul>
-      </nav>
+    <nav class="header-bar">
+      <ul>
+        <li class="headernav">
+          <amp-accordion layout="container" disable-session-states class="dropdown">
+            <section>
+              <header>Accesos directos</header>
+              <ul class="dropdown-item">
+                <li><a href="https://www.zonaestudiantes.cl/">Portal de créditos CAE</a></li>
+              </ul>
+            </section>
+          </amp-accordion>
+        </li>
+        <li><a href="https://ww2.itau.cl/personas/contactanos"> Contáctanos</a></li>
+        <li><a href="https://ww2.itau.cl/personas/sucursales">Sucursales</a></li>
+      </ul>
+    </nav>
   </header>
-  <!-- HEADER -->
 
-      <!-- FOOTER RRSS -->
-      <section id="redes-sociales-footer" data-section-name="Redes Sociales">
-		      <ul>
-            <li><a target="_blank" rel="noreferrer" href="https://es-la.facebook.com/itauchile">Facebook</a></li>
-            <li><a target="_blank" rel="noreferrer" href="https://twitter.com/itauchile">Twitter</a></li>
-            <li><a target="_blank" rel="noreferrer" href="https://cl.linkedin.com/company/itauchile">LinkedIn</a></li>
-            <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/itauchile">Instagram</a></li>
-            <li><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@itauchile?lang=es">Tiktok</a></li>
-          </ul>
+  <!--BANNER (IMG+EN ITAU TODO LO HACEMOS POR TI) -->
+
+
+  <!--TARJETAS (QUE TENEMOS PARA TI) -->
+
+
+  <!--SLIDER (OPORTUNIDADES UNICAS) -->
+
+
+  <!--TARJETAS (CONOCE LOS BENEFICIOS ITAU) -->
+
+
+  <!--IMAGENES C/ BOTONES (CUMPLE TUS SUEÑOS SIMULADOR) -->
+
+
+  <!-- CIERRE (DESCUBRE ITAU + IMG) -->
+
+
+  <!-- BOTON PA ARRIBA -->
+
+
+  <!-- FOOTER ACORDEON -->
+  <section>
+    <div>
+
+    <button> boton para subir </button>
+
+    <amp-accordion layout="container" disable-session-states class="dropdown">
+      <section>
+        <header>Productos</header>
+        <ul class="dropdown-items">
+          <li class="dropdown-item">
+            <a href="https://ww2.itau.cl/personas/cuenta-corriente">Cuenta Corriente</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="https://ww2.itau.cl/personas/creditos">Créditos</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="https://ww2.itau.cl/personas/tarjetas">Tarjetas</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="https://ww2.itau.cl/personas/seguros">Seguros</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="https://ww2.itau.cl/inversiones">Inversiones</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="https://ir.itau.cl/English/home/default.aspx">Inversor Relations</a>
+          </li>
+        </ul>
       </section>
+    </amp-accordion>
+
+    <amp-accordion layout="container" disable-session-states class="dropdown">
+      <section>
+        <header>Sobre Itaú</header>
+        <ul class="dropdown-items">
+          <li class="dropdown-item">
+            <a href="https://ww2.itau.cl/personas/documentacion-normativa">Documentación normativa</a>
+          </li>
+          <li class="dropdown-item">
+            <a
+              href="https://ww2.itau.cl/personas/documentacion-normativa#institucional-sobre-itau-corpbanca">Institucional</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="https://www.trabajaenitau.cl/">Trabaja en Itaú</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="https://ww2.itau.cl/personas/documentacion-normativa#bases-legales">Bases legales</a>
+          </li>
+        </ul>
+      </section>
+    </amp-accordion>
+
+    <amp-accordion layout="container" disable-session-states class="dropdown">
+      <section>
+        <header>Servicio al Cliente</header>
+        <ul class="dropdown-items">
+          <li class="dropdown-item">
+            <a href="https://ww2.itau.cl/personas/contactanos">Contáctanos</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="https://ww2.itau.cl/personas/sucursales">Sucursales</a>
+          </li>
+
+        </ul>
+      </section>
+    </amp-accordion>
+
+    <amp-accordion layout="container" disable-session-states class="dropdown">
+      <section>
+        <header>Infórmate</header>
+        <ul class="dropdown-items">
+          <li class="dropdown-item">
+            <a href="https://ww2.itau.cl/personas/documentacion-normativa#venta-de-bienes">Venta de Bienes</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="https://ir.itau.cl/English/home/default.aspx">Investor Relations</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="https://banco.itau.cl/wps/portal/BICPublico/productos/itau-corpbanca-NY-branch">New York Branch</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="https://ww2.itau.cl/personas/documentacion-normativa#tarifas-y-contratos">Tarifas y Contrato</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="https://ww2.itau.cl/personas/documentacion-normativa#adjudicacion-licitaciones-publicas
+              ">Adjudicación Licitación Pública</a>
+          </li>
+
+        </ul>
+      </section>
+    </amp-accordion>
+    </div>
+
+    
+  
+
+    <div>
+      <p>¿Cómo podemos ayudarte?</p>
+      <p>Si eres cliente del banco no dudes en comunicarte con nosotros:</p>
+
+
+      <li><a href="tel:+56226860888" class="footer-item-phone fw-normal text-decoration-none text-nowrap"><i class="icon_itau_phone_autorization"></i>+562 2686 0888</a></li>
+      <li><a href="tel:60068608888" class="footer-item-phone fw-normal text-decoration-none text-nowrap"><i class="icon_itau_phone_autorization"></i>600 686 08888</a></li>
+    </div>
+
+    <div>
+      <p> Descarga Nuestra Aplicación</p>
       
+      <a target="_blank" rel="noreferrer" href="https://apps.apple.com/us/app/itau-chile/id636150714?ls=1" class="btn-app-store d-inline-block img-fluid">
+        <img src="https://d1dzq2r60kxox4.cloudfront.net/uploads/592b68c7-f5de-46ba-9b0c-5a419029dc30/original/icon-appstore.svg" 
+        alt="Itaú App Store" 
+        aria-label="App Store" 
+        class="lazy img-fluid"
+        width="157"
+        height="46"
+      >
+      
+      </a>
+  
+      <a target="_blank" rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.konylabs.ItauMobileBank" class="btn-google-play d-inline-block img-fluid">
+        <img src="https://d1dzq2r60kxox4.cloudfront.net/uploads/7ed1dc0b-7e5b-4180-ab7a-cd62cf4763aa/original/icon-google-play.svg" 
+        alt="Itaú Google Play" 
+        aria-label="Google Play" 
+        class="lazy img-fluid"
+        width="157"
+        height="46"
+       >
+      </a>
+    
+    </div>
 
-  </body>
+    <div>
+
+      Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl © 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente Riesco 5537, Las Condes.
+    
+  </div>
+
+
+   </section>
+
+
+    <!-- FOOTER RRSS -->
+    <section id="redes-sociales-footer" data-section-name="Redes Sociales">
+
+      <amp-social-share 
+      type = "facebook" 
+      aria-label = "Compartir en Facebook" 
+      ></amp-social-share>
+
+      <amp-social-share 
+      type = "twitter" 
+      aria-label = "Compartir en Twitter" 
+      ></amp-social-share>
+
+      <amp-social-share 
+      type = "linkedin" 
+      aria-label = "Compartir en linkedin" 
+      ></amp-social-share>
+
+
+     
+    </section>
+
+    <!-- BOTON STICKY HAZTE CLIENTE -->
+
+</body>
 </html>
-
-
-
-
