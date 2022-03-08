@@ -1,0 +1,60 @@
+<header class="headerbar">
+  <div
+    role="button"
+    on="tap:header-sidebar.toggle"
+    tabindex="0"
+    class="navbar-trigger"
+  >
+    ☰
+  </div>
+  <h2>Chico's Cheese Bicycles</h2>
+</header>
+
+<amp-sidebar
+  id="header-sidebar"
+  class="sidebar"
+  layout="nodisplay"
+  side="left"
+>
+  <div
+    role="button"
+    on="tap:header-sidebar.toggle"
+    tabindex="0"
+    class="navbar-trigger"
+  >
+    ✕
+  </div>
+  <ul class="label">
+    <li class="nav-item"><a href="#">Our Story</a></li>
+    <li class="nav-item nav-dropdown">
+      <amp-accordion layout="container"
+        disable-session-states=""
+        class="dropdown"
+      >
+        <section>
+          <header>Our Bikes</header>
+          <ul class="dropdown-items">
+            <li class="dropdown-item"><a href="#">Ricotta Racer</a></li>
+            <li class="dropdown-item"><a href="#">Cheddar Chaser</a></li>
+            <li class="dropdown-item"><a href="#">Parmesan Pacer</a></li>
+          </ul>
+        </section>
+      </amp-accordion>
+    </li>
+    <li class="nav-item nav-dropdown">
+      <amp-accordion
+        layout="container"
+        disable-session-states=""
+        class="dropdown"
+      >
+        <section>
+          <header>Latest Models</header>
+          <ul class="dropdown-items">
+            <li class="dropdown-item"><a href="#">Ricotta Racer</a></li>
+          </ul>
+        </section>
+      </amp-accordion>
+    </li>
+    <li class="nav-item"><a href="#">Contact</a></li>
+  </ul>
+</amp-sidebar>
