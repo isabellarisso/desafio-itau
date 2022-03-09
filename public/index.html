@@ -17,7 +17,8 @@
   <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
   <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
   <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-  <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+  <script async custom-element="amp-lightbox-gallery"
+    src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
 
 
 
@@ -42,7 +43,7 @@
       top: 0px;
       position: sticky;
       background: white;
-      z-index:1;
+      z-index: 1;
     }
 
     .itau-header-div {
@@ -62,21 +63,49 @@
       display: flex;
       justify-content: space-around;
       background: white;
-      z-index:1;
+      z-index: 1;
     }
 
-    .itau-background-gray{
+    .itau-background-gray {
       background: #f5f5f5;
     }
-    
-    .card-orange-products{
+
+    .card-orange-products {
       background: #EC7000;
       height: 215.98px;
     }
 
     .slide {
-      z-index:-1;
+      z-index: -1;
     }
+
+    /* estilo de los simuladores */
+
+    .home-simulador{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .silumador {
+      z-index: -1;
+    }
+
+    .btn-primer-simulador {
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      position: relative;
+      color: white;
+    }
+
+    .btn-segundo-simulador{
+      z-index: 1;
+      position: relative;
+      color:white;
+    }
+
+
+
   </style>
 
   <!-- NO TOCAR -->
@@ -262,70 +291,74 @@
     <!--TARJETAS (QUE TENEMOS PARA TI) -->
     <section class="products-sub-hero">
       <div class="container-title-subtitle">
-				<p class="title-products-sub-hero">¿Qué tenemos para ti?</p>
-				<p class="subtitle-productos-sub-hero">Soluciones 100% digitales para hacer tu vida más simple </p>
-			</div>
+        <p class="title-products-sub-hero">¿Qué tenemos para ti?</p>
+        <p class="subtitle-productos-sub-hero">Soluciones 100% digitales para hacer tu vida más simple </p>
+      </div>
       <div class="container-cards-products">
         <div class="card-orange-products">
           <div class="info-cards">
             <p>Aplicación fácil de usar</p>
-					  <p><a href="https://apps.apple.com/us/app/itau-chile/id636150714?ls=1">Descargar App Itaú</a></p>
+            <p><a href="https://apps.apple.com/us/app/itau-chile/id636150714?ls=1">Descargar App Itaú</a></p>
           </div>
         </div>
         <div class="card-orange-products">
           <div class="info-cards">
             <p>Cotiza tu seguro de auto</p>
-					  <p><a href="https://ww2.itau.cl/personas/seguros/seguro-automotriz">Conoce más información</a></p>
+            <p><a href="https://ww2.itau.cl/personas/seguros/seguro-automotriz">Conoce más información</a></p>
           </div>
         </div>
         <div class="card-orange-products">
           <div class="info-cards">
             <p>Conoce la amplia oferta en inversiones que tenemos para ti</p>
-					  <p><a href="https://ww2.itau.cl/inversiones/">Ir a Inversiones</a></p>
+            <p><a href="https://ww2.itau.cl/inversiones/">Ir a Inversiones</a></p>
           </div>
         </div>
         <div class="card-orange-products">
           <div class="info-cards">
             <p>Beneficios únicos que harán tu vida más simple</p>
-					  <p><a href="https://www.itaubeneficios.cl">Ir a Itaú beneficios</a></p>
+            <p><a href="https://www.itaubeneficios.cl">Ir a Itaú beneficios</a></p>
           </div>
         </div>
       </div>
-      
+
     </section>
 
     <!--SLIDER (OPORTUNIDADES UNICAS) -->
     <amp-carousel class="carousel1" layout="responsive" height="590" width="450" type="slides">
       <div class="slide">
-        <amp-img src="/img-itau/sitio-nuevo-590x450-sin-boton.jpg" layout="responsive" width="590" height="450" alt="Contrata tu crédito con tasazo y participa por un iphone 13 pro max"></amp-img>
+        <amp-img src="/img-itau/sitio-nuevo-590x450-sin-boton.jpg" layout="responsive" width="590" height="450"
+          alt="Contrata tu crédito con tasazo y participa por un iphone 13 pro max"></amp-img>
         <amp-fit-text layout="responsive" width="500" height="100"> Aprovecha el tasazo y participa
           por un iphone 13 Pro Max </amp-fit-text>
       </div>
-    
+
       <div class="slide">
-        <amp-img src="/img-itau/Banner_sitio_patente_SOAP_febrero_1440x900.jpg" layout="responsive" width="590" height="450" alt="paga tu patente en 3 o 6 cuotas sin interès"></amp-img>
+        <amp-img src="/img-itau/Banner_sitio_patente_SOAP_febrero_1440x900.jpg" layout="responsive" width="590"
+          height="450" alt="paga tu patente en 3 o 6 cuotas sin interès"></amp-img>
         <amp-fit-text layout="responsive" width="500" height="100"> Contrata tu SOAP y patente 2022
           Adelántate y contrátalo con Itaú desde $4.640
         </amp-fit-text>
       </div>
-    
+
       <div class="slide">
-        <amp-img src="/img-itau/miami_open_590x450.jpg" layout="responsive" width="590" height="450" alt="Itaú te lleva al Miami Open"></amp-img>
+        <amp-img src="/img-itau/miami_open_590x450.jpg" layout="responsive" width="590" height="450"
+          alt="Itaú te lleva al Miami Open"></amp-img>
         <amp-fit-text layout="responsive" width="500" height="100">
           Itaú te lleva al Miami Open
-          Participa por un viaje para 2 usando tu billetera digital o pago QR 
+          Participa por un viaje para 2 usando tu billetera digital o pago QR
         </amp-fit-text>
       </div>
 
       <div class="slide">
-        <amp-img src="/img-itau/BANNER_HOME-590X450.jpg" layout="responsive" width="590" height="450" alt="Itaú te lleva al Miami Open"></amp-img>
+        <amp-img src="/img-itau/BANNER_HOME-590X450.jpg" layout="responsive" width="590" height="450"
+          alt="Itaú te lleva al Miami Open"></amp-img>
         <amp-fit-text layout="responsive" width="500" height="100">
           Visión de líderes
           Acompáñanos a conversar con Cady Coleman este jueves 17 de marzo en nuestros canales de Youtube y Linkedin.
         </amp-fit-text>
       </div>
     </amp-carousel>
-    
+
 
 
 
@@ -335,79 +368,80 @@
       <h2>Conoce los Beneficios Itaú</h2>
       <h3>Disfruta de las ventajas de tus tarjetas</h3>
       <amp-img
-      src="https://d1dzq2r60kxox4.cloudfront.net/uploads/de5bb9de-ec67-4622-b3b1-887e1f1d1e01/original/ConoceBeneficiosItau.png"
-      width="579" height="478" layout="intrinsic" alt="Dos personas mirando su estado bancario, y sonriendo">
-    </amp-img>
+        src="https://d1dzq2r60kxox4.cloudfront.net/uploads/de5bb9de-ec67-4622-b3b1-887e1f1d1e01/original/ConoceBeneficiosItau.png"
+        width="579" height="478" layout="intrinsic" alt="Dos personas mirando su estado bancario, y sonriendo">
+      </amp-img>
     </div>
-    
+
     <section>
       <div class="cards-row">
         <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/viajes/">
           <amp-img
-          src="https://d1dzq2r60kxox4.cloudfront.net/uploads/c8094c65-096c-4f4e-bc12-940096dc4aca/original/beneficios_vertical_3.jpg"
-          width="377" height="478" layout="intrinsic" alt="Mujer revisando su celular en una hamaca, mientras toma un mojito">
-        </amp-img></a>
-         </div>
+            src="https://d1dzq2r60kxox4.cloudfront.net/uploads/c8094c65-096c-4f4e-bc12-940096dc4aca/original/beneficios_vertical_3.jpg"
+            width="377" height="478" layout="intrinsic"
+            alt="Mujer revisando su celular en una hamaca, mientras toma un mojito">
+          </amp-img>
+        </a>
+      </div>
     </section>
 
 
 
-  
+
     <!--IMAGENES C/ BOTONES (CUMPLE TUS SUEÑOS SIMULADOR) -->
     <section class="home-simulador">
-      <div class = "simulador" >
+      <div class="simulador">
 
         <div class="container simulador">
-         <h2>Cumple tus sueños, simula tu crédito online</h2>
-         <h3>Obtén financiamento para lograr tus objetivos </h3>
+          <h2>Cumple tus sueños, simula tu crédito online</h2>
+          <h3>Obtén financiamento para lograr tus objetivos </h3>
         </div>
-  
+
         <div class="imagen-primer-silumador">
-          <amp-img data-src="https://d1dzq2r60kxox4.cloudfront.net/uploads/28b5df25-b2c7-455c-8d41-383bcea14672/original/home-simular-credito-consumo.jpg" 
-           alt="simula tu crédito de consumo"
-           class="itau-fullscreen-card__bg d-none d-md-block lazyloaded" 
-           src="https://d1dzq2r60kxox4.cloudfront.net/uploads/28b5df25-b2c7-455c-8d41-383bcea14672/original/home-simular-credito-consumo.jpg"
-           width="570" 
-           height="375">
-          </amp-img>
-         
-          <div class="btn-primer-simulador">
-            <div>
-              <div>
-                <p>Icono</p>
-                <h2>Simula tu crédito de consumo</h2>
-                <a href="https://banco.itau.cl/wps/portal/BICPublico/app2/credito-consumo" aria-label="Ir a Crédito de Consumo" class="btn btn-secondary-dark">Ir al simulador</a>
-              </div>
+          <amp-img
+            data-src="https://d1dzq2r60kxox4.cloudfront.net/uploads/3935a91f-075f-4f68-98e2-e46eaa5a3fb8/original/img-home-mob-simula-creditos-1.jpg"
+            alt="simula tu crédito de consumo"
+            class="itau-fullscreen-card__bg d-block d-md-none lazyloaded"
+            src="https://d1dzq2r60kxox4.cloudfront.net/uploads/3935a91f-075f-4f68-98e2-e46eaa5a3fb8/original/img-home-mob-simula-creditos-1.jpg"
+            width="375" 
+            height="570" >
+
+            <div class="btn-primer-simulador">
+              <p>Icono</p>
+              <h2>Simula tu crédito de consumo</h2>
+              <a href="https://banco.itau.cl/wps/portal/BICPublico/app2/credito-consumo"
+                aria-label="Ir a Crédito de Consumo" class="btn btn-secondary-dark">Ir al simulador</a>
             </div>
-          </div>
+          </amp-img>
+
         </div>
-  
+
         <div class="imagen-segundo-silumador">
-          <amp-img data-src="https://d1dzq2r60kxox4.cloudfront.net/uploads/777b8c79-b9b3-4f4b-b0d8-5e026ce38398/original/home-simular-credito-hipotecario.jpg" 
-          alt="simula tu crédito hipotecario" 
-          class="itau-fullscreen-card__bg d-none d-md-block lazyloaded" 
-          src="https://d1dzq2r60kxox4.cloudfront.net/uploads/777b8c79-b9b3-4f4b-b0d8-5e026ce38398/original/home-simular-credito-hipotecario.jpg"
-          width="570" 
-          height="375"></amp-img>
-          <div class="btn-segundo-simulador">
-            <div>
+          <amp-img
+            data-src="https://d1dzq2r60kxox4.cloudfront.net/uploads/379e5e4e-eb4a-414f-8b68-99fce40679cb/original/img-home-mob-simula-creditos-2.jpg"
+            alt="simula tu crédito hipotecario" 
+            class="itau-fullscreen-card__bg d-block d-md-none lazyloaded"
+            src="https://d1dzq2r60kxox4.cloudfront.net/uploads/379e5e4e-eb4a-414f-8b68-99fce40679cb/original/img-home-mob-simula-creditos-2.jpg"
+            width="375" 
+            height="570">
+            <div class="btn-segundo-simulador">
               <div>
                 <p>Icono</p>
                 <h2>Simula tu crédito hipotecario</h2>
-                <a href="https://servicios.asicom.cl/itau/simulador.jsp?institucion=itau&amp;&amp;?cod=/wps/portal/BICPublico/productos/parausted/hipotecarios" aria-label="Ir a Crédito Hipotecario" class="btn btn-secondary-dark">Ir al simulador</a>
+                <a href="https://servicios.asicom.cl/itau/simulador.jsp?institucion=itau&amp;&amp;?cod=/wps/portal/BICPublico/productos/parausted/hipotecarios"
+                  aria-label="Ir a Crédito Hipotecario" class="btn btn-secondary-dark">Ir al simulador</a>
               </div>
             </div>
-          </div>
+          </amp-img>
+
         </div>
-
-      </div>
-      </section>
-   
+    </section>
 
 
 
 
-  
+
+
     <!-- CIERRE (DESCUBRE ITAU + IMG) -->
 
     <section>
@@ -416,19 +450,15 @@
         <p>Te ayudamos a cumplir tus sueños</p>
       </div>
       <div>
-        <amp-img
-            src="/img-itau/hazte_cliente_itau_chico_riendo.png"
-            alt="chico riendo"
-            height="415" width="510"
-          >
-          </amp-img>
+        <amp-img src="/img-itau/hazte_cliente_itau_chico_riendo.png" alt="chico riendo" height="415" width="510">
+        </amp-img>
       </div>
       <div>
         <button><a href="https://ww2.itau.cl/personas/hazte-cliente">Hazte Cliente</a></button>
       </div>
     </section>
 
-    
+
     <!-- FOOTER ACORDEON -->
     <section>
       <div>
