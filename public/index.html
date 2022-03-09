@@ -67,6 +67,7 @@
 
     .itau-background-gray{
       background: #f5f5f5;
+      padding:20px;
     }
     
     .card-orange-products{
@@ -76,6 +77,13 @@
 
     .slide {
       z-index:-1;
+    }
+
+    .cards-row{
+      background:white;
+      border-radius: 12px;
+      padding:10px;
+      margin: 20px;
     }
   </style>
 
@@ -249,7 +257,7 @@
     </ul>
   </amp-sidebar>
   <!--BANNER (IMG+EN ITAU TODO LO HACEMOS POR TI) -->
-  <section class="Hero">
+<!--   <section class="Hero">
     <amp-img
       src="https://d1dzq2r60kxox4.cloudfront.net/uploads/cc0eb3c0-ae34-4102-b2ce-fd3df875b53f/original/Banner_Home_Sitio_P_blico_Empresas_Ita_576x513.png"
       width="389" height="359" layout="intrinsic" alt="mujer sonriendo con su mano en la mejilla">
@@ -257,10 +265,10 @@
     <section class="banner-home-title">
       <h2>En Itaú, todo lo hacemos por ti</h2>
       <button><a href="/personas/hazte-cliente"></a>Hazte cliente</a></button>
-    </section>
+    </section> -->
 
     <!--TARJETAS (QUE TENEMOS PARA TI) -->
-    <section class="products-sub-hero">
+<!--     <section class="products-sub-hero">
       <div class="container-title-subtitle">
 				<p class="title-products-sub-hero">¿Qué tenemos para ti?</p>
 				<p class="subtitle-productos-sub-hero">Soluciones 100% digitales para hacer tu vida más simple </p>
@@ -292,10 +300,10 @@
         </div>
       </div>
       
-    </section>
+    </section> -->
 
     <!--SLIDER (OPORTUNIDADES UNICAS) -->
-    <amp-carousel class="carousel1" layout="responsive" height="590" width="450" type="slides">
+    <!-- <amp-carousel class="carousel1" layout="responsive" height="590" width="450" type="slides">
       <div class="slide">
         <amp-img src="/img-itau/sitio-nuevo-590x450-sin-boton.jpg" layout="responsive" width="590" height="450" alt="Contrata tu crédito con tasazo y participa por un iphone 13 pro max"></amp-img>
         <amp-fit-text layout="responsive" width="500" height="100"> Aprovecha el tasazo y participa
@@ -324,14 +332,15 @@
           Acompáñanos a conversar con Cady Coleman este jueves 17 de marzo en nuestros canales de Youtube y Linkedin.
         </amp-fit-text>
       </div>
-    </amp-carousel>
+    </amp-carousel> -->
     
 
 
 
 
     <!--TARJETAS (CONOCE LOS BENEFICIOS ITAU) -->
-    <div class="itau-background-gray">
+    <section class="itau-background-gray">
+      <div>
       <h2>Conoce los Beneficios Itaú</h2>
       <h3>Disfruta de las ventajas de tus tarjetas</h3>
       <amp-img
@@ -340,21 +349,73 @@
     </amp-img>
     </div>
     
-    <section>
+
       <div class="cards-row">
-        <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/viajes/">
+        <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/itau-puntos/">
+        <div class="texto-card">
+          <h3>Canjea tus Utaú puntos por lo que quieras</h3>
+          <p>Usa tu tarjeta de crédito Itaú, acumula puntos y canjea por lo que quieras: Viajes, productos, giftcard o incluso pagar cualquier compra de tu tarjeta.</p>
+          <p class="itau-animación-hover">Conoce Más</p>
+        </div>
+        <amp-img
+        src="https://d1dzq2r60kxox4.cloudfront.net/uploads/de821a0d-d005-4200-974c-c6bdb90d7fe8/original/beneficios_horizontal_2_.jpg"
+        width="500" height="333" layout="intrinsic" alt="Canjea tus Itaú puntos, dos dispositivos móviles con imágenes naranjas acorde al branding">
+      </amp-img>
+      </a>
+         </div>
+
+         <div class="cards-row">
+          <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/viajes/">
+          <div class="texto-card">
+            <h3>Viaja todo el año</h3>
+            <p>Beneficios exclusivos en el mundo</p>
+            <p class="itau-animación-hover">Conoce Más</p>
+          </div>
           <amp-img
           src="https://d1dzq2r60kxox4.cloudfront.net/uploads/c8094c65-096c-4f4e-bc12-940096dc4aca/original/beneficios_vertical_3.jpg"
-          width="377" height="478" layout="intrinsic" alt="Mujer revisando su celular en una hamaca, mientras toma un mojito">
-        </amp-img></a>
-         </div>
+          width="500" height="333" layout="intrinsic" alt="Mujer revisando su celular en una hamaca, mientras toma un mojito">
+        </amp-img>
+        </a>
+           </div>
+
+           <div class="cards-row">
+            <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/campana-del-mes/">
+            <div class="texto-card">
+              <h3>Promociones del Mes</h3>
+              <p>Aprovecha los beneficios de marzo</p>
+              <p class="itau-animación-hover">Conoce Más</p>
+            </div>
+            <amp-img
+            src="https://d1dzq2r60kxox4.cloudfront.net/uploads/d65f8e5f-70e1-4f2e-ae1f-18e299a93213/original/beneficios_vertical_1.jpg"
+            width="464" height="449" layout="intrinsic" alt="Manos sosteniendo un regalo en fondo naranja">
+          </amp-img>
+          </a>
+             </div>
+
+             <div class="cards-row">
+              <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/jueves-gourmet/">
+              <div class="texto-card">
+                <h3>Descuentos Itaú</h3>
+                <p>Disfruta beneficios exclusivos en restaurantes, App de delivery, belleza, combustible, hoteles y más con tus tarjetas de crédito o débito Itaú.</p>
+                <p class="itau-animación-hover">Conoce Más</p>
+              </div>
+              <amp-img
+              src="https://d1dzq2r60kxox4.cloudfront.net/uploads/d1aa1884-de6d-4e71-8a0d-5acc260334fd/original/beneficios_vertical_2.jpg"
+              width="464" height="449" layout="intrinsic" alt="Familia, donde una niña le da unas frutillas en la boca a un adulto, mientras comparten juntos">
+            </amp-img>
+            </a>
+               </div>
+<div> <button><a href="https://itaubeneficios.cl/itau-puntos/" target="_blank" rel="noopener noreferrer">Ir a Itaú beneficios</a></button></div>
+               
+
+
     </section>
 
 
 
   
     <!--IMAGENES C/ BOTONES (CUMPLE TUS SUEÑOS SIMULADOR) -->
-    <section class="home-simulador">
+    <!-- <section class="home-simulador">
       <div class = "simulador" >
 
         <div class="container simulador">
@@ -401,7 +462,7 @@
         </div>
 
       </div>
-      </section>
+      </section> -->
    
 
 
@@ -410,7 +471,7 @@
   
     <!-- CIERRE (DESCUBRE ITAU + IMG) -->
 
-    <section>
+   <!--  <section>
       <div>
         <h2>Descubre lo que Itaú puede hacer por ti</h2>
         <p>Te ayudamos a cumplir tus sueños</p>
@@ -426,11 +487,11 @@
       <div>
         <button><a href="https://ww2.itau.cl/personas/hazte-cliente">Hazte Cliente</a></button>
       </div>
-    </section>
+    </section> -->
 
     
     <!-- FOOTER ACORDEON -->
-    <section>
+   <!--  <section>
       <div>
 
         <button> boton para subir </button>
@@ -569,7 +630,7 @@
 
 
     </section>
-
+ -->
 
     <!-- FOOTER RRSS -->
     <section id="redes-sociales-footer" data-section-name="Redes Sociales">
@@ -579,7 +640,9 @@
       <amp-social-share type="twitter" aria-label="Compartir en Twitter"></amp-social-share>
 
       <amp-social-share type="linkedin" aria-label="Compartir en linkedin"></amp-social-share>
+
       <amp-social-share type="instagram" aria-label="Compartir en linkedin"></amp-social-share>
+
       <amp-social-share type="tiktok" aria-label="Compartir en linkedin"></amp-social-share>
 
 
