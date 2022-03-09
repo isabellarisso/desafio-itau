@@ -44,67 +44,7 @@
     * {
       font-family: "PT Sans", sans-serif;
     }
-    .contenedor {
-        display: flex;
-    }
 
-    .hero{
-      margin: auto;
-      padding:5px;
-      align-content: center;
-      align-items:center;
-    }
-
-    .banner-hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #f5f5f5;
-      padding: 20px;
-    }
-
-    .banner-home-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .heroimg{
-      display: block;
-  margin-left: auto;
-  margin-right: auto;
-    }
-
-    .btn-orange {
-      background-color: rgb(236 112 0);
-      border: none;
-      border-radius: 5px;
-      color: #FFFFFF;
-      padding: 10px;
-      
-    }
-
-    .btn-blue {
-      background-color: #FFFFFF;
-      border: solid 1px rgb(0 51 153);
-      border-radius: 5px;
-      color: rgb(0 51 153);
-      padding: 10px;
-    }
-
-    .btn-blue:hover{
-      background-color: #C1CCDB;
-    }
-
-    .btn-orange:hover{
-      background-color: rgb(255 121 0);
-    }
-    
-    .btn-enlace {
-      color: rgb(0 51 153);
-    }
-
-  
     .itau-header {
       display: flex;
       height: 40px;
@@ -113,12 +53,12 @@
       box-shadow: 0 0 5px 3px #9d9d9d;
       top: 0px;
       position: sticky;
-      background: #FFFFFF;
+      background: white;
       z-index: 1;
     }
 
     .itau-header-div {
-      color: #FFFFFF;
+      color: white;
       height: 20px;
     }
 
@@ -133,18 +73,9 @@
       position: sticky;
       display: flex;
       justify-content: space-around;
-      background: #FFFFFF;
+      background: white;
       z-index: 1;
     }
-    
-    .banner-home-title{
-      background: #f5f5f5;
-      margin-left: 10px;
-      margin-right: 10px;
-      border-radius: 12px;
-  
-    } 
-
 
     .itau-background-gray {
       background: #f5f5f5;
@@ -153,11 +84,12 @@
 
     /* TARJETAS ("QUE TENEMOS PARA TI") */
     .products-sub-hero{
-      padding: 12px;
+      padding: 24px;
     }
+
     .card-orange-products{
-      padding: 12px;
-      margin: 15px;
+      padding: 24px;
+      margin: 24px;
       background: #EC7000;
       height: 187.19px;
       border-radius: 12px;
@@ -165,16 +97,9 @@
     a{
       text-decoration: none;
     }
-    ul{
-        list-style:none;
-        padding: 16px;
-  background-color: #f9f9f9;
-  padding: 12px 16px;
-    }
-
     .btn-info-cards{
-      margin-bottom: 20px;
-      color:#FFFFFF;
+      margin-top: 82px;
+      color:white;
     }
     .title-card{
       font-size: 24px;
@@ -222,19 +147,15 @@
     .info-primer-simulador {
       z-index: 1;
       position: relative;
-      color:#FFFFFF;
+      color:white;
       align-content: center;
       margin-bottom: 200px;
-      margin-left: 10px;
     }
 
     .info-segundo-simulador{
       z-index: 1;
       position: relative;
-      color:#FFFFFF;
-      align-content: center;
-      margin-bottom: 200px;
-      margin-left: 10px;
+      color:white;
     }
 
     .btn-simulador{
@@ -242,8 +163,8 @@
       border-radius: 10px;
       border-width:thin;
       border:solid;
-      color:#FFFFFF;
-      border-color: #FFFFFF;
+      color:white;
+      border-color: white;
       font-size: 18px;
       padding-top: 10px;
       padding-bottom:10px;
@@ -254,13 +175,13 @@
 
   
     .cards-row{
-      background:#FFFFFF;
+      background:white;
       border-radius: 12px;
       padding:10px;
       margin: 20px;
     }
 
-  
+    
 
   </style>
 
@@ -435,19 +356,17 @@
   </amp-sidebar>
 
 
-  <div class="contenedor">
+  <div>
   <!--BANNER (IMG+EN ITAU TODO LO HACEMOS POR TI) -->
-<section class="hero">
-  <div class="banner-hero">
+<section class="Hero">
     <amp-img
       src="https://d1dzq2r60kxox4.cloudfront.net/uploads/cc0eb3c0-ae34-4102-b2ce-fd3df875b53f/original/Banner_Home_Sitio_P_blico_Empresas_Ita_576x513.png"
-      width="291" height="269" layout="fixed" alt="mujer sonriendo con su mano en la mejilla" class="heroimg">
+      width="389" height="359" layout="intrinsic" alt="mujer sonriendo con su mano en la mejilla">
     </amp-img>
-    <div class="banner-home-title">
+    <section class="banner-home-title">
       <h2>En Itaú, todo lo hacemos por ti</h2>
-      <button class="btn-blue"><a href="/personas/hazte-cliente"></a>Hazte cliente</a></button>
-    </div>
-  </div>
+      <button><a href="/personas/hazte-cliente"></a>Hazte cliente</a></button>
+    </section>
 
     <!--TARJETAS NARANJAS(QUE TENEMOS PARA TI) -->
   <section class="products-sub-hero">
@@ -551,7 +470,7 @@
       <div class="cards-row">
         <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/itau-puntos/">
         <div class="texto-card">
-          <h3>Canjea tus Itaú puntos por lo que quieras</h3>
+          <h3>Canjea tus Utaú puntos por lo que quieras</h3>
           <p>Usa tu tarjeta de crédito Itaú, acumula puntos y canjea por lo que quieras: Viajes, productos, giftcard o incluso pagar cualquier compra de tu tarjeta.</p>
           <p class="itau-animación-hover">Conoce Más</p>
         </div>
@@ -603,12 +522,10 @@
             </amp-img>
             </a>
                </div>
-<div> 
-  <button class="btn-orange"><a href="https://itaubeneficios.cl/itau-puntos/" target="_blank" rel="noopener noreferrer">Ir a Itaú beneficios</a></button>
-</div>
+<div> <button><a href="https://itaubeneficios.cl/itau-puntos/" target="_blank" rel="noopener noreferrer">Ir a Itaú beneficios</a></button></div>
                
+
     </section>
-  </section>
 
 
 
@@ -635,6 +552,7 @@
             layout="responsive" >
 
             <div class="info-primer-simulador">
+              <p>Icono</p>
               <h2>Simula tu crédito de consumo</h2>
               <button class="btn-simulador"><a href="https://banco.itau.cl/wps/portal/BICPublico/app2/credito-consumo"
                ></a>Ir al simulador</button>
@@ -655,6 +573,7 @@
 
             <div class="info-segundo-simulador">
               <div>
+                <p>Icono</p>
                 <h2>Simula tu crédito hipotecario</h2>
                 <button class="btn-simulador"><a href="https://servicios.asicom.cl/itau/simulador.jsp?institucion=itau&amp;&amp;?cod=/wps/portal/BICPublico/productos/parausted/hipotecarios"
                   ></a>Ir al simulador</button>
@@ -664,6 +583,7 @@
 
         </div>
     </section>
+
 
 
     <!-- CIERRE (DESCUBRE ITAU + IMG) -->
@@ -677,7 +597,7 @@
         </amp-img>
       </div>
       <div>
-        <button class="btn-orange"><a class="btn-orange" href="https://ww2.itau.cl/personas/hazte-cliente">Hazte Cliente</a></button>
+        <button><a href="https://ww2.itau.cl/personas/hazte-cliente">Hazte Cliente</a></button>
       </div>
     </section>
 
@@ -686,7 +606,7 @@
 <section>
       <div>
 
-        <button><a href="">boton para subir </a> </button>
+        <button> boton para subir </button>
 
         <amp-accordion layout="container" disable-session-states class="dropdown">
           <section>
@@ -813,19 +733,6 @@
 
       </div>
 
-    </section>
- 
-    <!-- FOOTER RRSS -->
-    <section id="redes-sociales-footer" data-section-name="Redes Sociales">
-
-      <div>
-        <amp-social-share type="facebook" aria-label="Compartir en Facebook"></amp-social-share>
-        <amp-social-share type="twitter" aria-label="Compartir en Twitter"></amp-social-share>
-        <amp-social-share type="linkedin" aria-label="Compartir en linkedin"></amp-social-share>
-        <amp-social-share type="instagram" aria-label="Compartir en linkedin"></amp-social-share>
-        <amp-social-share type="tiktok" aria-label="Compartir en linkedin"></amp-social-share>
-      </div>
-
       <div>
 
         Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl © 2022 Banco Itaú. Todos
@@ -833,14 +740,31 @@
 
       </div>
 
+
+    </section>
+ 
+    <!-- FOOTER RRSS -->
+    <section id="redes-sociales-footer" data-section-name="Redes Sociales">
+
+      <amp-social-share type="facebook" aria-label="Compartir en Facebook"></amp-social-share>
+
+      <amp-social-share type="twitter" aria-label="Compartir en Twitter"></amp-social-share>
+
+      <amp-social-share type="linkedin" aria-label="Compartir en linkedin"></amp-social-share>
+
+      <amp-social-share type="instagram" aria-label="Compartir en linkedin"></amp-social-share>
+
+      <amp-social-share type="tiktok" aria-label="Compartir en linkedin"></amp-social-share>
+
+
+
     </section>
 
-  </div>
     <!-- BOTON STICKY HAZTE CLIENTE -->
     <section class="itau-cliente-sticky">
-      <button class="btn-blue"><a class="btn-enlace"href="https://ww2.itau.cl/personas/hazte-cliente">Hazte Cliente</a></button>
+      <button><a href="https://ww2.itau.cl/personas/hazte-cliente">Hazte Cliente</a></button>
 
-      <button class="btn-orange"><a class="btn-orange" href="https://banco.itau.cl/wps/portal/olbmobile/web/login">Acceso Cliente</a></button>
+      <button><a href="https://banco.itau.cl/wps/portal/olbmobile/web/login">Acceso Cliente</a></button>
 
     </section>
 
