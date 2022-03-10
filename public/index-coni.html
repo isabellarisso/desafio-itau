@@ -45,79 +45,6 @@
       font-family: "PT Sans", sans-serif;
     }
 
-    .contenedor {
-        display: flex;
-    }
-
-    .itau-navbar-principal {
-      border: solid 1px #9d9d9d;
-    }
-
-    .nav-dropdown-items {
-      background-color: rgb(245 245 245);
-      border: solid 1px #9d9d9d;
-      padding: 10px;
-
-    }
-
-    .hero{
-      margin: auto;
-      padding:5px;
-      align-content: center;
-      align-items:center;
-    }
-
-    .heroimg{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .container-title-subtitle {
-      margin-left: 24px;
-    }
-
-    .btn-orange {
-      background-color: rgb(236 112 0);
-      border: none;
-      border-radius: 5px;
-      color: #FFFFFF;
-      padding: 10px;
-      
-    }
-
-    .btn-blue {
-      background-color: #FFFFFF;
-      border: solid 1px rgb(0 51 153);
-      border-radius: 5px;
-      color: rgb(0 51 153);
-      padding: 10px;
-    }
-
-    .btn-blue:hover{
-      background-color: #C1CCDB;
-    }
-
-    h2{
-      font-size: 35px;
-    }
-
-    h3{
-      font-size: 28px;
-    }
-    .container {
-        display: flex;
-    }
-
-    .btn-orange:hover{
-      background-color: rgb(255 121 0);
-    }
-    
-    .btn-enlace {
-      color: rgb(0 51 153);
-    }
-
-  
     .itau-header {
       display: flex;
       height: 40px;
@@ -126,13 +53,12 @@
       box-shadow: 0 0 5px 3px #9d9d9d;
       top: 0px;
       position: sticky;
-      background: #FFFFFF;
-      z-index: 14;
-
+      background: white;
+      z-index: 1;
     }
 
     .itau-header-div {
-      color: #FFFFFF;
+      color: white;
       height: 20px;
     }
 
@@ -147,19 +73,8 @@
       position: sticky;
       display: flex;
       justify-content: space-around;
-      background: #FFFFFF;
+      background: white;
       z-index: 1;
-    }
-
-    .banner-home-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      background: #f5f5f5;
-      /* margin: 0 24px 0 24px; */
-      width:70%;
-      border-radius: 12px 12px 0 0;
     }
 
     .itau-background-gray {
@@ -169,9 +84,8 @@
 
     /* TARJETAS ("QUE TENEMOS PARA TI") */
     .products-sub-hero{
-      padding: 12px;
+      padding: 24px;
     }
-
     .card-orange-products{
       padding: 12px;
       margin: 15px;
@@ -179,48 +93,21 @@
       height: 187.19px;
       border-radius: 12px;
     }
-
     a{
       text-decoration: none;
     }
-
-    ul{
-      list-style:none;
-       /*
-      padding: 12px 16px;
-      background-color: #f9f9f9;
-      padding: 12px 16px;*/
-
-    }
-
     .btn-info-cards{
-      margin-bottom: 20px;
-      color:#FFFFFF;
+      margin-bottom: 15px;
+      color:white;
     }
     .title-card{
-
-      color: #FFFFFF;
-
       font-size: 24px;
     }
     .subtitle-card{
       font-size: 18px;
-      color: #FFFFFF;
     }
-
     .slide {
-      width:90%;
-    height: 70%;
-      border-radius: 12px;
-            background-color: #f5f5f5;
-      
-    }
-
-  
-    .texto-slide{
-    text-align: center;
-      width:90%;
-      margin: 12px;
+      z-index: -1;
     }
 
     /* estilo de los simuladores */
@@ -230,204 +117,30 @@
       flex-direction: row;
     }
 
-    .titulos-simulador-a{
-      font-size: 36px;
-      color: #252220;
-      margin-bottom: 10px;
-      font-weight: 500;
-    }
-    .titulos-simulador-b{
-      font-size: 24px;
-      font-weight: 100;
-      color: #252220;
-      margin-bottom: 20px;
-      margin-top: 10px;
-      word-break: normal;
-      
+    .silumador {
+      z-index: -1;
     }
 
-    .btn-info-cards{
-      font-size: 24px;
-      color: #252220;
-    }
-
-    .imagen-simulador{
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-
-    .info-primer-simulador {
+    .btn-primer-simulador {
+      display: flex;
+      flex-direction: column;
       z-index: 1;
       position: relative;
-      color:#FFFFFF;
-      align-content: center;
-      margin-bottom: 200px;
-      margin-left: 10px;
+      color: white;
     }
 
-    .info-segundo-simulador{
+    .btn-segundo-simulador{
       z-index: 1;
       position: relative;
-      color:#FFFFFF;
-      align-content: center;
-      margin-bottom: 200px;
-      margin-left: 10px;
+      color:white;
     }
 
-    .btn-simulador{
-      background: transparent;
-      border-radius: 10px;
-      border-width:thin;
-      border:solid;
-      color:#FFFFFF;
-      border-color: #FFFFFF;
-      font-size: 18px;
-      padding-top: 10px;
-      padding-bottom:10px;
-      padding-left: 24px;
-      padding-right: 24px;
-    
-    }
-
-  
     .cards-row{
-      background:#FFFFFF;
+      background:white;
       border-radius: 12px;
       padding:10px;
       margin: 20px;
     }
-
-
-
-    /* Descubre itau*/
-
-    .container-descubre-itau {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .img-descubre-itau {
-      margin-top: 15px;
-    }
-
-    .btn-descubre-itau {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-    }
-
-
-    /* footer ACORDEON */
-
-    .container-footer-acordeon {
-      display: flex;
-      flex-direction: column;
-      background-color: rgb(245 245 245);
-      padding-left: 50px;
-    }
-
-    .a-items {
-      color: #252220;
-      text-decoration: none;
-      padding: 20px;
-    }
-
-    .a-items:hover {
-      color: #EC7000;
-      text-decoration: none;
-    }
-
-    .dropdown-tittle {
-      background-color: rgb(245 245 245);
-      border: none;
-      padding: 10px;
-    }
-
-    .dropdown-items {
-      background-color: #FFFFFF;
-      margin: 0 24px 0 24px;
-    }
-
-
-    /* datos contacto */
-
-    .contacto{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-top: 32px;
-            padding-bottom: 32px;
-            padding-left: 24px;
-            padding-right: 24px;
-        }
-
-        .como-podemos-ayudarte{
-            font-size: 25px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            margin-top: 20px;
-            color: #252220;
-        }
-
-        .si-eres-cliente{
-            font-size: 20px;
-            text-align: center;
-            letter-spacing: 1px;
-            font-weight: 50;
-            color: #252220; 
-        }
-
-
-        .telefonos-contacto{
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        color: #252220;
-        
-        }
-
-        .telefono{
-            margin-right: 30px;
-            color: #252220;
-            font-size: 20px;
-        }
-
-        .descarga-nuestra-aplicacion{
-        display: flex;
-        flex-direction: column;
-         align-items: center;
-        justify-content: center;
-        }
-
-        .titulo-descarga-nuestra-aplicacion{
-            font-size: 25px;
-            text-align: center;
-            font-weight: 600;
-            letter-spacing: 1px;
-            margin-top: 20px;
-            color: #252220;
-            word-break: break-all;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-
-        .btn-aplicaciones{
-            display: flex;
-            flex-direction: row;
-        }
-
-.itau-animación-hover{
-  color: #EC7000;
-
-}
-  
 
   </style>
 
@@ -536,21 +249,19 @@
             <header class="itau-navbar-principal">Productos</header>
             <ul class="nav-dropdown-items">
               <li class="itau-navitem">
-
-                <a class="a-items" href="https://ww2.itau.cl/personas/cuenta-corriente">Cuenta Corriente</a>
+                <a href="https://ww2.itau.cl/personas/cuenta-corriente">Cuenta Corriente</a>
               </li>
               <li class="itau-navitem">
-                <a class="a-items" href="https://ww2.itau.cl/personas/tarjetas">Tarjetas</a>
+                <a href="https://ww2.itau.cl/personas/tarjetas">Tarjetas</a>
               </li>
               <li class="itau-navitem">
-                <a class="a-items" href="https://ww2.itau.cl/personas/creditos">Créditos</a>
+                <a href="https://ww2.itau.cl/personas/creditos">Créditos</a>
               </li>
               <li class="itau-navitem">
-                <a class="a-items" href="https://ww2.itau.cl/personas/seguros">Séguros</a>
+                <a href="https://ww2.itau.cl/personas/seguros">Séguros</a>
               </li>
               <li class="itau-navitem">
-                <a class="a-items" href="https://ww2.itau.cl/inversiones">Inversiones</a>
-
+                <a href="https://ww2.itau.cl/inversiones">Inversiones</a>
               </li>
             </ul>
           </section>
@@ -558,13 +269,11 @@
       </li>
 
       <li class="itau-navbar-principal">
-
-        <a class="a-items" href="https://www.itaubeneficios.cl/"> Itaú beneficios</a>
+        <a href="https://www.itaubeneficios.cl/"> Itaú beneficios</a>
       </li>
 
       <li class="itau-navbar-principal">
-        <a class="a-items" href="https://ww2.itau.cl/personas/contactanos"> Hazte Cliente</a>
-
+        <a href="https://ww2.itau.cl/personas/contactanos"> Hazte Cliente</a>
       </li>
 
       <li>
@@ -573,12 +282,10 @@
             <header class="itau-navbar-principal">Mi cuenta</header>
             <ul class="nav-dropdown-items">
               <li class="itau-navitem">
-
-                <a class="a-items" href="https://ww2.itau.cl/personas/cuenta-corriente">Personas y Pymes</a>
+                <a href="https://ww2.itau.cl/personas/cuenta-corriente">Personas y Pymes</a>
               </li>
               <li class="itau-navitem">
-                <a class="a-items" href="https://ww2.itau.cl/personas/tarjetas">Empresas</a>
-
+                <a href="https://ww2.itau.cl/personas/tarjetas">Empresas</a>
               </li>
             </ul>
           </section>
@@ -591,9 +298,7 @@
             <header class="itau-navbar-principal">Accesos directos</header>
             <ul class="nav-dropdown-items">
               <li class="itau-navitem">
-
-                <a class="a-items" href="https://ww2.itau.cl/personas/cuenta-corriente">Portal de Créditos CAE</a>
-
+                <a href="https://ww2.itau.cl/personas/cuenta-corriente">Portal de Créditos CAE</a>
               </li>
             </ul>
           </section>
@@ -601,38 +306,32 @@
       </li>
 
       <li>
-
-        <a class="a-items" href="https://ww2.itau.cl/personas/contactanos"> Contáctanos</a>
+        <a href="https://ww2.itau.cl/personas/contactanos"> Contáctanos</a>
       </li>
       <li>
-        <a class="a-items" href="https://ww2.itau.cl/personas/sucursales">Sucursales</a>
-
+        <a href="https://ww2.itau.cl/personas/sucursales">Sucursales</a>
       </li>
     </ul>
   </amp-sidebar>
 
 
-  <div class="contenedor">
+  <div>
   <!--BANNER (IMG+EN ITAU TODO LO HACEMOS POR TI) -->
-<section class="hero">
-  <div class="banner-hero">
+<section class="Hero">
     <amp-img
       src="https://d1dzq2r60kxox4.cloudfront.net/uploads/cc0eb3c0-ae34-4102-b2ce-fd3df875b53f/original/Banner_Home_Sitio_P_blico_Empresas_Ita_576x513.png"
-      width="291" height="269" layout="fixed" alt="mujer sonriendo con su mano en la mejilla" class="heroimg">
+      width="389" height="359" layout="intrinsic" alt="mujer sonriendo con su mano en la mejilla">
     </amp-img>
-    <div class="banner-home-title">
+    <section class="banner-home-title">
       <h2>En Itaú, todo lo hacemos por ti</h2>
-      <button class="btn-blue"><a href="/personas/hazte-cliente"></a>Hazte cliente</a></button>
-    </div>
-  </div>
+      <button><a href="/personas/hazte-cliente"></a>Hazte cliente</a></button>
+    </section>
 
     <!--TARJETAS NARANJAS(QUE TENEMOS PARA TI) -->
   <section class="products-sub-hero">
       <div class="container-title-subtitle">
-
-        <h2 class="title-sub-hero">¿Qué tenemos para ti?</p>
-        <p class="subtitle-sub-hero">Soluciones 100% digitales para hacer tu vida más simple </p>
-
+        <p class="title-products-sub-hero">¿Qué tenemos para ti?</p>
+        <p class="subtitle-productos-sub-hero">Soluciones 100% digitales para hacer tu vida más simple </p>
       </div>
       <div class="container-cards-products">
 
@@ -677,18 +376,14 @@
       <div class="slide">
         <amp-img src="/img-itau/sitio-nuevo-590x450-sin-boton.jpg" layout="responsive" width="590" height="450"
           alt="Contrata tu crédito con tasazo y participa por un iphone 13 pro max"></amp-img>
-
-        <amp-fit-text layout="responsive" width="500" height="50" max-font-size="26" class="texto-slide"> Aprovecha el tasazo y participa
-
+        <amp-fit-text layout="responsive" width="500" height="100"> Aprovecha el tasazo y participa
           por un iphone 13 Pro Max </amp-fit-text>
       </div>
 
       <div class="slide">
         <amp-img src="/img-itau/Banner_sitio_patente_SOAP_febrero_1440x900.jpg" layout="responsive" width="590"
           height="450" alt="paga tu patente en 3 o 6 cuotas sin interès"></amp-img>
-
-        <amp-fit-text layout="responsive" width="500" height="50" max-font-size="26" class="texto-slide"> Contrata tu SOAP y patente 2022
-
+        <amp-fit-text layout="responsive" width="500" height="100"> Contrata tu SOAP y patente 2022
           Adelántate y contrátalo con Itaú desde $4.640
         </amp-fit-text>
       </div>
@@ -696,9 +391,7 @@
       <div class="slide">
         <amp-img src="/img-itau/miami_open_590x450.jpg" layout="responsive" width="590" height="450"
           alt="Itaú te lleva al Miami Open"></amp-img>
-
-        <amp-fit-text layout="responsive" width="500" height="50"max-font-size="26" class="texto-slide">
-
+        <amp-fit-text layout="responsive" width="500" height="100">
           Itaú te lleva al Miami Open
           Participa por un viaje para 2 usando tu billetera digital o pago QR
         </amp-fit-text>
@@ -707,15 +400,16 @@
       <div class="slide">
         <amp-img src="/img-itau/BANNER_HOME-590X450.jpg" layout="responsive" width="590" height="450"
           alt="Itaú te lleva al Miami Open"></amp-img>
-
-          <amp-fit-text layout="responsive" width="500" height="50"max-font-size="26" class="texto-slide">
+        <amp-fit-text layout="responsive" width="500" height="100">
           Visión de líderes
           Acompáñanos a conversar con Cady Coleman este jueves 17 de marzo en nuestros canales de Youtube y Linkedin.
-          </amp-fit-text>
-
+        </amp-fit-text>
       </div>
 
     </amp-carousel>
+
+
+
 
 
     <!--TARJETAS (CONOCE LOS BENEFICIOS ITAU) -->
@@ -733,12 +427,11 @@
     <section>
 
       <div class="cards-row">
-
+        <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/itau-puntos/">
         <div class="texto-card">
-          <h3>Canjea tus Itaú puntos por lo que quieras</h3>
-          <p class="cards-text">Usa tu tarjeta de crédito Itaú, acumula puntos y canjea por lo que quieras: Viajes, productos, giftcard o incluso pagar cualquier compra de tu tarjeta.</p>
-          <p class="itau-animación-hover"><a class="itau-animación-hover" target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/itau-puntos/">Conoce Más</a></p>
-
+          <h3>Canjea tus Utaú puntos por lo que quieras</h3>
+          <p>Usa tu tarjeta de crédito Itaú, acumula puntos y canjea por lo que quieras: Viajes, productos, giftcard o incluso pagar cualquier compra de tu tarjeta.</p>
+          <p class="itau-animación-hover">Conoce Más</p>
         </div>
         <amp-img
         src="https://d1dzq2r60kxox4.cloudfront.net/uploads/de821a0d-d005-4200-974c-c6bdb90d7fe8/original/beneficios_horizontal_2_.jpg"
@@ -748,12 +441,11 @@
          </div>
 
          <div class="cards-row">
-
+          <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/viajes/">
           <div class="texto-card">
             <h3>Viaja todo el año</h3>
-            <p class="cards-text">>Beneficios exclusivos en el mundo</p>
-            <p class="itau-animación-hover"><a class="itau-animación-hover" target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/viajes/">Conoce Más</a></p>
-
+            <p>Beneficios exclusivos en el mundo</p>
+            <p class="itau-animación-hover">Conoce Más</p>
           </div>
           <amp-img
           src="https://d1dzq2r60kxox4.cloudfront.net/uploads/c8094c65-096c-4f4e-bc12-940096dc4aca/original/beneficios_vertical_3.jpg"
@@ -762,12 +454,12 @@
         </a>
            </div>
 
-
            <div class="cards-row">
+            <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/campana-del-mes/">
             <div class="texto-card">
               <h3>Promociones del Mes</h3>
               <p>Aprovecha los beneficios de marzo</p>
-              <p class="itau-animación-hover"><a class="itau-animación-hover" target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/campana-del-mes/">Conoce Más</a></p>
+              <p class="itau-animación-hover">Conoce Más</p>
             </div>
             <amp-img
             src="https://d1dzq2r60kxox4.cloudfront.net/uploads/d65f8e5f-70e1-4f2e-ae1f-18e299a93213/original/beneficios_vertical_1.jpg"
@@ -777,10 +469,11 @@
              </div>
 
              <div class="cards-row">
+              <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/jueves-gourmet/">
               <div class="texto-card">
                 <h3>Descuentos Itaú</h3>
                 <p>Disfruta beneficios exclusivos en restaurantes, App de delivery, belleza, combustible, hoteles y más con tus tarjetas de crédito o débito Itaú.</p>
-                <p class="itau-animación-hover"><a class="itau-animación-hover" target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/jueves-gourmet/">Conoce Más</a></p>
+                <p class="itau-animación-hover">Conoce Más</p>
               </div>
               <amp-img
               src="https://d1dzq2r60kxox4.cloudfront.net/uploads/d1aa1884-de6d-4e71-8a0d-5acc260334fd/original/beneficios_vertical_2.jpg"
@@ -788,12 +481,10 @@
             </amp-img>
             </a>
                </div>
-<div> 
-  <button class="btn-orange"><a href="https://itaubeneficios.cl/itau-puntos/" target="_blank" rel="noopener noreferrer">Ir a Itaú beneficios</a></button>
-</div>
+<div> <button><a href="https://itaubeneficios.cl/itau-puntos/" target="_blank" rel="noopener noreferrer">Ir a Itaú beneficios</a></button></div>
                
+
     </section>
-  </section>
 
 
 
@@ -804,30 +495,28 @@
       <div class="simulador">
 
 
-
-        <div class="titulos-simulador">
-          <h4 class = "titulos-simulador-a">Cumple tus sueños, simula tu crédito online</h4>
-          <h6 class = "titulos-simulador-b">Obtén financiamento para lograr tus objetivos </h6>
+        <div class="container simulador">
+          <h2>Cumple tus sueños, simula tu crédito online</h2>
+          <h3>Obtén financiamento para lograr tus objetivos </h3>
         </div>
 
-        <div class="primer-simulador">
+        <div class="imagen-primer-silumador">
           <amp-img
             data-src="https://d1dzq2r60kxox4.cloudfront.net/uploads/3935a91f-075f-4f68-98e2-e46eaa5a3fb8/original/img-home-mob-simula-creditos-1.jpg"
-            alt="mujer tomando un cafe y mirando su télefono"
-            class="imagen-simulador"
+            alt="simula tu crédito de consumo"
+            class="itau-fullscreen-card__bg d-block d-md-none lazyloaded"
             src="https://d1dzq2r60kxox4.cloudfront.net/uploads/3935a91f-075f-4f68-98e2-e46eaa5a3fb8/original/img-home-mob-simula-creditos-1.jpg"
             width="375" 
             height="570"
             layout="responsive" >
 
-
-            <div class="info-primer-simulador">
+            <div class="btn-primer-simulador">
+              <p>Icono</p>
               <h2>Simula tu crédito de consumo</h2>
-              <button class="btn-simulador"><a href="https://banco.itau.cl/wps/portal/BICPublico/app2/credito-consumo"
-               ></a>Ir al simulador</button>
+              <a href="https://banco.itau.cl/wps/portal/BICPublico/app2/credito-consumo"
+                aria-label="Ir a Crédito de Consumo" class="btn btn-secondary-dark">Ir al simulador</a>
             </div>
           </amp-img>
-
 
         </div>
 
@@ -835,17 +524,17 @@
           <amp-img
             data-src="https://d1dzq2r60kxox4.cloudfront.net/uploads/379e5e4e-eb4a-414f-8b68-99fce40679cb/original/img-home-mob-simula-creditos-2.jpg"
             alt="simula tu crédito hipotecario" 
-            class="imagen-simulador"
+            class="itau-fullscreen-card__bg d-block d-md-none lazyloaded"
             src="https://d1dzq2r60kxox4.cloudfront.net/uploads/379e5e4e-eb4a-414f-8b68-99fce40679cb/original/img-home-mob-simula-creditos-2.jpg"
             width="375" 
             height="570"
             layout="responsive">
-
-            <div class="info-segundo-simulador">
+            <div class="btn-segundo-simulador">
               <div>
+                <p>Icono</p>
                 <h2>Simula tu crédito hipotecario</h2>
-                <button class="btn-simulador"><a href="https://servicios.asicom.cl/itau/simulador.jsp?institucion=itau&amp;&amp;?cod=/wps/portal/BICPublico/productos/parausted/hipotecarios"
-                  ></a>Ir al simulador</button>
+                <a href="https://servicios.asicom.cl/itau/simulador.jsp?institucion=itau&amp;&amp;?cod=/wps/portal/BICPublico/productos/parausted/hipotecarios"
+                  aria-label="Ir a Crédito Hipotecario" class="btn btn-secondary-dark">Ir al simulador</a>
               </div>
             </div>
           </amp-img>
@@ -854,32 +543,28 @@
     </section>
 
 
+
     <!-- CIERRE (DESCUBRE ITAU + IMG) -->
-
- <section class="container-descubre-itau">
-
+ <section>
       <div>
         <h2>Descubre lo que Itaú puede hacer por ti</h2>
         <p>Te ayudamos a cumplir tus sueños</p>
       </div>
-
-      <div class="btn-descubre-itau">
-        <button class="btn-orange"><a class="btn-orange" href="https://ww2.itau.cl/personas/hazte-cliente">Hazte Cliente</a></button>
-      </div>
-      <div class="img-descubre-itau">
-        <amp-img class="img-descubre-itau" src="/img-itau/hazte_cliente_itau_chico_riendo.png" alt="chico riendo colorin" height="415" width="510" layout="responsive">
+      <div>
+        <amp-img src="/img-itau/hazte_cliente_itau_chico_riendo.png" alt="chico riendo" height="415" width="510" layout="responsive">
         </amp-img>
       </div>
-    </div>
+      <div>
+        <button><a href="https://ww2.itau.cl/personas/hazte-cliente">Hazte Cliente</a></button>
+      </div>
     </section>
-
 
 
     <!-- FOOTER ACORDEON -->
 <section>
       <div>
 
-        <button><a href="">boton para subir </a> </button>
+        <button> boton para subir </button>
 
         <amp-accordion layout="container" disable-session-states class="dropdown">
           <section>
@@ -928,68 +613,15 @@
           </section>
         </amp-accordion>
 
-
-    <!-- FOOTER ACORDEON -->
-    <section>
-      <div class="container-footer-acordeon">
-
-        <button><a href="">boton para subir </a> </button>
-
         <amp-accordion layout="container" disable-session-states class="dropdown">
           <section>
-            <header class="dropdown-tittle">Productos</header>
+            <header>Servicio al Cliente</header>
             <ul class="dropdown-items">
               <li class="dropdown-item">
-                <a class="a-items" href="https://ww2.itau.cl/personas/cuenta-corriente">Cuenta Corriente</a>
+                <a href="https://ww2.itau.cl/personas/contactanos">Contáctanos</a>
               </li>
               <li class="dropdown-item">
-                <a class="a-items" href="https://ww2.itau.cl/personas/creditos">Créditos</a>
-              </li>
-              <li class="dropdown-item">
-                <a class="a-items" href="https://ww2.itau.cl/personas/tarjetas">Tarjetas</a>
-              </li>
-              <li class="dropdown-item">
-                <a class="a-items" href="https://ww2.itau.cl/personas/seguros">Seguros</a>
-              </li>
-              <li class="dropdown-item">
-                <a class="a-items" href="https://ww2.itau.cl/inversiones">Inversiones</a>
-              </li>
-              <li class="dropdown-item">
-                <a class="a-items" href="https://ir.itau.cl/English/home/default.aspx">Inversor Relations</a>
-              </li>
-            </ul>
-          </section>
-        </amp-accordion>
-
-        <amp-accordion layout="container" disable-session-states class="dropdown">
-          <section>
-            <header class="dropdown-tittle">Sobre Itaú</header>
-            <ul class="dropdown-items">
-              <li class="dropdown-item">
-                <a class="a-items" href="https://ww2.itau.cl/personas/documentacion-normativa">Documentación normativa</a>
-              </li>
-              <li class="dropdown-item">
-                <a class="a-items" href="https://ww2.itau.cl/personas/documentacion-normativa#institucional-sobre-itau-corpbanca">Institucional</a>
-              </li>
-              <li class="dropdown-item">
-                <a class="a-items" href="https://www.trabajaenitau.cl/">Trabaja en Itaú</a>
-              </li>
-              <li class="dropdown-item">
-                <a class="a-items" href="https://ww2.itau.cl/personas/documentacion-normativa#bases-legales">Bases legales</a>
-              </li>
-            </ul>
-          </section>
-        </amp-accordion>
-
-        <amp-accordion layout="container" disable-session-states class="dropdown">
-          <section>
-            <header class="dropdown-tittle" >Servicio al Cliente</header>
-            <ul class="dropdown-items">
-              <li class="dropdown-item">
-                <a class="a-items" href="https://ww2.itau.cl/personas/contactanos">Contáctanos</a>
-              </li>
-              <li class="dropdown-item">
-                <a class="a-items" href="https://ww2.itau.cl/personas/sucursales">Sucursales</a>
+                <a href="https://ww2.itau.cl/personas/sucursales">Sucursales</a>
               </li>
 
             </ul>
@@ -998,24 +630,24 @@
 
         <amp-accordion layout="container" disable-session-states class="dropdown">
           <section>
-            <header class="dropdown-tittle" >Infórmate</header>
+            <header>Infórmate</header>
             <ul class="dropdown-items">
               <li class="dropdown-item">
-                <a class="a-items" href="https://ww2.itau.cl/personas/documentacion-normativa#venta-de-bienes">Venta de Bienes</a>
+                <a href="https://ww2.itau.cl/personas/documentacion-normativa#venta-de-bienes">Venta de Bienes</a>
               </li>
               <li class="dropdown-item">
-                <a class="a-items" href="https://ir.itau.cl/English/home/default.aspx">Investor Relations</a>
+                <a href="https://ir.itau.cl/English/home/default.aspx">Investor Relations</a>
               </li>
               <li class="dropdown-item">
-                <a class="a-items" href="https://banco.itau.cl/wps/portal/BICPublico/productos/itau-corpbanca-NY-branch">New York
+                <a href="https://banco.itau.cl/wps/portal/BICPublico/productos/itau-corpbanca-NY-branch">New York
                   Branch</a>
               </li>
               <li class="dropdown-item">
-                <a class="a-items" href="https://ww2.itau.cl/personas/documentacion-normativa#tarifas-y-contratos">Tarifas y
+                <a href="https://ww2.itau.cl/personas/documentacion-normativa#tarifas-y-contratos">Tarifas y
                   Contrato</a>
               </li>
               <li class="dropdown-item">
-                <a class="a-items" href="https://ww2.itau.cl/personas/documentacion-normativa#adjudicacion-licitaciones-publicas
+                <a href="https://ww2.itau.cl/personas/documentacion-normativa#adjudicacion-licitaciones-publicas
               ">Adjudicación Licitación Pública</a>
               </li>
 
@@ -1027,63 +659,36 @@
 
 
 
-       <div class="contacto">
+      <div>
+        <p>¿Cómo podemos ayudarte?</p>
+        <p>Si eres cliente del banco no dudes en comunicarte con nosotros:</p>
 
-        <p class="como-podemos-ayudarte"> ¿Cómo podemos ayudarte?</p>
-        <p class="si-eres-cliente">Si eres cliente del banco no dudes en comunicarte con nosotros:</p>
 
+        <li><a href="tel:+56226860888" class="footer-item-phone fw-normal text-decoration-none text-nowrap"><i
+              class="icon_itau_phone_autorization"></i>+562 2686 0888</a></li>
+        <li><a href="tel:60068608888" class="footer-item-phone fw-normal text-decoration-none text-nowrap"><i
+              class="icon_itau_phone_autorization"></i>600 686 08888</a></li>
+      </div>
 
-        <div class="telefonos-contacto">
-      
-          <a href="tel:+56226860888"
-                class="telefono">+562 2686 0888</a></amp-img> 
+      <div>
+        <p> Descarga Nuestra Aplicación</p>
 
-         <a href="tel:60068608888"
-                class="telefono"><i
-                    class="icon_itau_phone_autorization"></i>600 686 08888</a>
-
-        </div>    
-
-    </div>
-
-    <div class="descarga-nuestra-aplicacion">
-        <p class="titulo-descarga-nuestra-aplicacion"> Descarga Nuestra Aplicación Itáu</p>
-        
-
-        <div>
         <a target="_blank" rel="noreferrer" href="https://apps.apple.com/us/app/itau-chile/id636150714?ls=1"
-            class="btn-aplicaciones">
-            <img src="https://d1dzq2r60kxox4.cloudfront.net/uploads/592b68c7-f5de-46ba-9b0c-5a419029dc30/original/icon-appstore.svg"
-                alt="Itaú App Store" aria-label="App Store" class="lazy img-fluid" width="157" height="46">
+          class="btn-app-store d-inline-block img-fluid">
+          <img
+            src="https://d1dzq2r60kxox4.cloudfront.net/uploads/592b68c7-f5de-46ba-9b0c-5a419029dc30/original/icon-appstore.svg"
+            alt="Itaú App Store" aria-label="App Store" class="lazy img-fluid" width="157" height="46">
+
         </a>
 
         <a target="_blank" rel="noreferrer"
-            href="https://play.google.com/store/apps/details?id=com.konylabs.ItauMobileBank"
-            class="btn-aplicaciones">
-            <img src="https://d1dzq2r60kxox4.cloudfront.net/uploads/7ed1dc0b-7e5b-4180-ab7a-cd62cf4763aa/original/icon-google-play.svg"
-                alt="Itaú Google Play" aria-label="Google Play" class="lazy img-fluid" width="157"
-                height="46">
+          href="https://play.google.com/store/apps/details?id=com.konylabs.ItauMobileBank"
+          class="btn-google-play d-inline-block img-fluid">
+          <img
+            src="https://d1dzq2r60kxox4.cloudfront.net/uploads/7ed1dc0b-7e5b-4180-ab7a-cd62cf4763aa/original/icon-google-play.svg"
+            alt="Itaú Google Play" aria-label="Google Play" class="lazy img-fluid" width="157" height="46">
         </a>
-    </div>
 
-    </div>
-
-
-
-
- 
-
-    </section>
- 
-    <!-- FOOTER RRSS -->
-    <section id="redes-sociales-footer" data-section-name="Redes Sociales">
-
-      <div>
-        <amp-social-share type="facebook" aria-label="Compartir en Facebook"></amp-social-share>
-        <amp-social-share type="twitter" aria-label="Compartir en Twitter"></amp-social-share>
-        <amp-social-share type="linkedin" aria-label="Compartir en linkedin"></amp-social-share>
-        <amp-social-share type="instagram" aria-label="Compartir en linkedin"></amp-social-share>
-        <amp-social-share type="tiktok" aria-label="Compartir en linkedin"></amp-social-share>
       </div>
 
       <div>
@@ -1093,14 +698,31 @@
 
       </div>
 
+
+    </section>
+ 
+    <!-- FOOTER RRSS -->
+    <section id="redes-sociales-footer" data-section-name="Redes Sociales">
+
+      <amp-social-share type="facebook" aria-label="Compartir en Facebook"></amp-social-share>
+
+      <amp-social-share type="twitter" aria-label="Compartir en Twitter"></amp-social-share>
+
+      <amp-social-share type="linkedin" aria-label="Compartir en linkedin"></amp-social-share>
+
+      <amp-social-share type="instagram" aria-label="Compartir en linkedin"></amp-social-share>
+
+      <amp-social-share type="tiktok" aria-label="Compartir en linkedin"></amp-social-share>
+
+
+
     </section>
 
-  </div>
     <!-- BOTON STICKY HAZTE CLIENTE -->
     <section class="itau-cliente-sticky">
-      <button class="btn-blue"><a class="btn-enlace"href="https://ww2.itau.cl/personas/hazte-cliente">Hazte Cliente</a></button>
+      <button><a href="https://ww2.itau.cl/personas/hazte-cliente">Hazte Cliente</a></button>
 
-      <button class="btn-orange"><a class="btn-orange" href="https://banco.itau.cl/wps/portal/olbmobile/web/login">Acceso Cliente</a></button>
+      <button><a href="https://banco.itau.cl/wps/portal/olbmobile/web/login">Acceso Cliente</a></button>
 
     </section>
 
