@@ -44,7 +44,7 @@
     * {
       font-family: "PT Sans", sans-serif;
     }
-    .contenedor {
+    .container {
         display: flex;
     }
 
@@ -59,20 +59,36 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: #f5f5f5;
-      padding: 20px;
+     
     }
 
     .banner-home-title {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 20px;
+      background: #f5f5f5;
+      margin: 0 24px 0 24px;
+      border-radius: 12px 12px 0 0;
     }
 
     .heroimg{
       display: block;
   margin-left: auto;
   margin-right: auto;
+    }
+
+ .container-title-subtitle{
+  align-self:center;
+  width: 90%;
+  margin:auto;
+ }
+
+    .subtitle-sub-hero{
+      font-weight: 100;
+      margin-bottom: 20px;
+      margin-top: 10px;
+
     }
 
     .btn-orange {
@@ -114,7 +130,7 @@
       top: 0px;
       position: sticky;
       background: #FFFFFF;
-      z-index: 1;
+      z-index: 14;
     }
 
     .itau-header-div {
@@ -137,13 +153,16 @@
       z-index: 1;
     }
     
-    .banner-home-title{
+    .banner-home-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
       background: #f5f5f5;
-      margin-left: 10px;
-      margin-right: 10px;
-      border-radius: 12px;
-  
-    } 
+      /* margin: 0 24px 0 24px; */
+      width:70%;
+      border-radius: 12px 12px 0 0;
+    }
 
 
     .itau-background-gray {
@@ -177,13 +196,27 @@
       color:#FFFFFF;
     }
     .title-card{
+      color: #FFFFFF;
       font-size: 24px;
     }
     .subtitle-card{
       font-size: 18px;
+      color: #FFFFFF;
     }
+
     .slide {
-      z-index: -1;
+      width:90%;
+    height: 70%;
+      border-radius: 12px;
+            background-color: #f5f5f5;
+      
+    }
+
+  
+    .texto-slide{
+    text-align: center;
+      width:90%;
+      margin: 12px;
     }
 
     /* estilo de los simuladores */
@@ -452,8 +485,8 @@
     <!--TARJETAS NARANJAS(QUE TENEMOS PARA TI) -->
   <section class="products-sub-hero">
       <div class="container-title-subtitle">
-        <p class="title-products-sub-hero">¿Qué tenemos para ti?</p>
-        <p class="subtitle-productos-sub-hero">Soluciones 100% digitales para hacer tu vida más simple </p>
+        <h2 class="title-sub-hero">¿Qué tenemos para ti?</p>
+        <p class="subtitle-sub-hero">Soluciones 100% digitales para hacer tu vida más simple </p>
       </div>
       <div class="container-cards-products">
 
@@ -498,14 +531,14 @@
       <div class="slide">
         <amp-img src="/img-itau/sitio-nuevo-590x450-sin-boton.jpg" layout="responsive" width="590" height="450"
           alt="Contrata tu crédito con tasazo y participa por un iphone 13 pro max"></amp-img>
-        <amp-fit-text layout="responsive" width="500" height="100"> Aprovecha el tasazo y participa
+        <amp-fit-text layout="responsive" width="500" height="50" max-font-size="26" class="texto-slide"> Aprovecha el tasazo y participa
           por un iphone 13 Pro Max </amp-fit-text>
       </div>
 
       <div class="slide">
         <amp-img src="/img-itau/Banner_sitio_patente_SOAP_febrero_1440x900.jpg" layout="responsive" width="590"
           height="450" alt="paga tu patente en 3 o 6 cuotas sin interès"></amp-img>
-        <amp-fit-text layout="responsive" width="500" height="100"> Contrata tu SOAP y patente 2022
+        <amp-fit-text layout="responsive" width="500" height="50" max-font-size="26" class="texto-slide"> Contrata tu SOAP y patente 2022
           Adelántate y contrátalo con Itaú desde $4.640
         </amp-fit-text>
       </div>
@@ -513,7 +546,7 @@
       <div class="slide">
         <amp-img src="/img-itau/miami_open_590x450.jpg" layout="responsive" width="590" height="450"
           alt="Itaú te lleva al Miami Open"></amp-img>
-        <amp-fit-text layout="responsive" width="500" height="100">
+        <amp-fit-text layout="responsive" width="500" height="50"max-font-size="26" class="texto-slide">
           Itaú te lleva al Miami Open
           Participa por un viaje para 2 usando tu billetera digital o pago QR
         </amp-fit-text>
@@ -522,10 +555,10 @@
       <div class="slide">
         <amp-img src="/img-itau/BANNER_HOME-590X450.jpg" layout="responsive" width="590" height="450"
           alt="Itaú te lleva al Miami Open"></amp-img>
-        <amp-fit-text layout="responsive" width="500" height="100">
+          <amp-fit-text layout="responsive" width="500" height="50"max-font-size="26" class="texto-slide">
           Visión de líderes
           Acompáñanos a conversar con Cady Coleman este jueves 17 de marzo en nuestros canales de Youtube y Linkedin.
-        </amp-fit-text>
+          </amp-fit-text>
       </div>
 
     </amp-carousel>
@@ -673,7 +706,7 @@
         <p>Te ayudamos a cumplir tus sueños</p>
       </div>
       <div>
-        <amp-img src="/img-itau/hazte_cliente_itau_chico_riendo.png" alt="chico riendo" height="415" width="510" layout="responsive">
+        <amp-img src="/img-itau/hazte_cliente_itau_chico_riendo.png" alt="chico riendo colorín" height="415" width="510" layout="responsive">
         </amp-img>
       </div>
       <div>
