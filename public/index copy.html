@@ -44,15 +44,7 @@
     * {
       font-family: "PT Sans", sans-serif;
     }
-
-    h2{
-      font-size: 35px;
-    }
-
-    h3{
-      font-size: 28px;
-    }
-    .container {
+    .contenedor {
         display: flex;
     }
 
@@ -67,36 +59,20 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-     
+      background-color: #f5f5f5;
+      padding: 20px;
     }
 
     .banner-home-title {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
-      background: #f5f5f5;
-      margin: 0 24px 0 24px;
-      border-radius: 12px 12px 0 0;
     }
 
     .heroimg{
       display: block;
   margin-left: auto;
   margin-right: auto;
-    }
-
- .container-title-subtitle{
-  align-self:center;
-  width: 90%;
-  margin:auto;
- }
-
-    .subtitle-sub-hero{
-      font-weight: 100;
-      margin-bottom: 20px;
-      margin-top: 10px;
-
     }
 
     .btn-orange {
@@ -138,7 +114,7 @@
       top: 0px;
       position: sticky;
       background: #FFFFFF;
-      z-index: 14;
+      z-index: 1;
     }
 
     .itau-header-div {
@@ -161,16 +137,13 @@
       z-index: 1;
     }
     
-    .banner-home-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
+    .banner-home-title{
       background: #f5f5f5;
-      /* margin: 0 24px 0 24px; */
-      width:70%;
-      border-radius: 12px 12px 0 0;
-    }
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 12px;
+  
+    } 
 
 
     .itau-background-gray {
@@ -204,27 +177,13 @@
       color:#FFFFFF;
     }
     .title-card{
-      color: #FFFFFF;
       font-size: 24px;
     }
     .subtitle-card{
       font-size: 18px;
-      color: #FFFFFF;
     }
-
     .slide {
-      width:90%;
-    height: 70%;
-      border-radius: 12px;
-            background-color: #f5f5f5;
-      
-    }
-
-  
-    .texto-slide{
-    text-align: center;
-      width:90%;
-      margin: 12px;
+      z-index: -1;
     }
 
     /* estilo de los simuladores */
@@ -301,84 +260,6 @@
       margin: 20px;
     }
 
-
-
-    /* datos contacto */
-
-    .contacto{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-top: 32px;
-            padding-bottom: 32px;
-            padding-left: 24px;
-            padding-right: 24px;
-        }
-
-        .como-podemos-ayudarte{
-            font-size: 25px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            margin-top: 20px;
-            color: #252220;
-        }
-
-        .si-eres-cliente{
-            font-size: 20px;
-            text-align: center;
-            letter-spacing: 1px;
-            font-weight: 50;
-            color: #252220; 
-        }
-
-
-        .telefonos-contacto{
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        color: #252220;
-        
-        }
-
-        .telefono{
-            margin-right: 30px;
-            color: #252220;
-            font-size: 20px;
-        }
-
-        .descarga-nuestra-aplicacion{
-        display: flex;
-        flex-direction: column;
-         align-items: center;
-        justify-content: center;
-        }
-
-        .titulo-descarga-nuestra-aplicacion{
-            font-size: 25px;
-            text-align: center;
-            font-weight: 600;
-            letter-spacing: 1px;
-            margin-top: 20px;
-            color: #252220;
-            word-break: break-all;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-
-        .btn-aplicaciones{
-            display: flex;
-            flex-direction: row;
-        }
-
-.itau-animación-hover{
-  color: #EC7000;
-
-}
   
 
   </style>
@@ -571,8 +452,8 @@
     <!--TARJETAS NARANJAS(QUE TENEMOS PARA TI) -->
   <section class="products-sub-hero">
       <div class="container-title-subtitle">
-        <h2 class="title-sub-hero">¿Qué tenemos para ti?</p>
-        <p class="subtitle-sub-hero">Soluciones 100% digitales para hacer tu vida más simple </p>
+        <p class="title-products-sub-hero">¿Qué tenemos para ti?</p>
+        <p class="subtitle-productos-sub-hero">Soluciones 100% digitales para hacer tu vida más simple </p>
       </div>
       <div class="container-cards-products">
 
@@ -617,14 +498,14 @@
       <div class="slide">
         <amp-img src="/img-itau/sitio-nuevo-590x450-sin-boton.jpg" layout="responsive" width="590" height="450"
           alt="Contrata tu crédito con tasazo y participa por un iphone 13 pro max"></amp-img>
-        <amp-fit-text layout="responsive" width="500" height="50" max-font-size="26" class="texto-slide"> Aprovecha el tasazo y participa
+        <amp-fit-text layout="responsive" width="500" height="100"> Aprovecha el tasazo y participa
           por un iphone 13 Pro Max </amp-fit-text>
       </div>
 
       <div class="slide">
         <amp-img src="/img-itau/Banner_sitio_patente_SOAP_febrero_1440x900.jpg" layout="responsive" width="590"
           height="450" alt="paga tu patente en 3 o 6 cuotas sin interès"></amp-img>
-        <amp-fit-text layout="responsive" width="500" height="50" max-font-size="26" class="texto-slide"> Contrata tu SOAP y patente 2022
+        <amp-fit-text layout="responsive" width="500" height="100"> Contrata tu SOAP y patente 2022
           Adelántate y contrátalo con Itaú desde $4.640
         </amp-fit-text>
       </div>
@@ -632,7 +513,7 @@
       <div class="slide">
         <amp-img src="/img-itau/miami_open_590x450.jpg" layout="responsive" width="590" height="450"
           alt="Itaú te lleva al Miami Open"></amp-img>
-        <amp-fit-text layout="responsive" width="500" height="50"max-font-size="26" class="texto-slide">
+        <amp-fit-text layout="responsive" width="500" height="100">
           Itaú te lleva al Miami Open
           Participa por un viaje para 2 usando tu billetera digital o pago QR
         </amp-fit-text>
@@ -641,13 +522,16 @@
       <div class="slide">
         <amp-img src="/img-itau/BANNER_HOME-590X450.jpg" layout="responsive" width="590" height="450"
           alt="Itaú te lleva al Miami Open"></amp-img>
-          <amp-fit-text layout="responsive" width="500" height="50"max-font-size="26" class="texto-slide">
+        <amp-fit-text layout="responsive" width="500" height="100">
           Visión de líderes
           Acompáñanos a conversar con Cady Coleman este jueves 17 de marzo en nuestros canales de Youtube y Linkedin.
-          </amp-fit-text>
+        </amp-fit-text>
       </div>
 
     </amp-carousel>
+
+
+
 
 
     <!--TARJETAS (CONOCE LOS BENEFICIOS ITAU) -->
@@ -665,10 +549,11 @@
     <section>
 
       <div class="cards-row">
+        <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/itau-puntos/">
         <div class="texto-card">
           <h3>Canjea tus Itaú puntos por lo que quieras</h3>
-          <p class="cards-text">Usa tu tarjeta de crédito Itaú, acumula puntos y canjea por lo que quieras: Viajes, productos, giftcard o incluso pagar cualquier compra de tu tarjeta.</p>
-          <p class="itau-animación-hover"><a class="itau-animación-hover" target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/itau-puntos/">Conoce Más</a></p>
+          <p>Usa tu tarjeta de crédito Itaú, acumula puntos y canjea por lo que quieras: Viajes, productos, giftcard o incluso pagar cualquier compra de tu tarjeta.</p>
+          <p class="itau-animación-hover">Conoce Más</p>
         </div>
         <amp-img
         src="https://d1dzq2r60kxox4.cloudfront.net/uploads/de821a0d-d005-4200-974c-c6bdb90d7fe8/original/beneficios_horizontal_2_.jpg"
@@ -678,10 +563,11 @@
          </div>
 
          <div class="cards-row">
+          <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/viajes/">
           <div class="texto-card">
             <h3>Viaja todo el año</h3>
-            <p class="cards-text">>Beneficios exclusivos en el mundo</p>
-            <p class="itau-animación-hover"><a class="itau-animación-hover" target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/viajes/">Conoce Más</a></p>
+            <p>Beneficios exclusivos en el mundo</p>
+            <p class="itau-animación-hover">Conoce Más</p>
           </div>
           <amp-img
           src="https://d1dzq2r60kxox4.cloudfront.net/uploads/c8094c65-096c-4f4e-bc12-940096dc4aca/original/beneficios_vertical_3.jpg"
@@ -691,10 +577,11 @@
            </div>
 
            <div class="cards-row">
+            <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/campana-del-mes/">
             <div class="texto-card">
               <h3>Promociones del Mes</h3>
               <p>Aprovecha los beneficios de marzo</p>
-              <p class="itau-animación-hover"><a class="itau-animación-hover" target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/campana-del-mes/">Conoce Más</a></p>
+              <p class="itau-animación-hover">Conoce Más</p>
             </div>
             <amp-img
             src="https://d1dzq2r60kxox4.cloudfront.net/uploads/d65f8e5f-70e1-4f2e-ae1f-18e299a93213/original/beneficios_vertical_1.jpg"
@@ -704,10 +591,11 @@
              </div>
 
              <div class="cards-row">
+              <a target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/jueves-gourmet/">
               <div class="texto-card">
                 <h3>Descuentos Itaú</h3>
                 <p>Disfruta beneficios exclusivos en restaurantes, App de delivery, belleza, combustible, hoteles y más con tus tarjetas de crédito o débito Itaú.</p>
-                <p class="itau-animación-hover"><a class="itau-animación-hover" target="_blank" rel="noopener noreferrer" href="https://itaubeneficios.cl/jueves-gourmet/">Conoce Más</a></p>
+                <p class="itau-animación-hover">Conoce Más</p>
               </div>
               <amp-img
               src="https://d1dzq2r60kxox4.cloudfront.net/uploads/d1aa1884-de6d-4e71-8a0d-5acc260334fd/original/beneficios_vertical_2.jpg"
@@ -785,7 +673,7 @@
         <p>Te ayudamos a cumplir tus sueños</p>
       </div>
       <div>
-        <amp-img src="/img-itau/hazte_cliente_itau_chico_riendo.png" alt="chico riendo colorín" height="415" width="510" layout="responsive">
+        <amp-img src="/img-itau/hazte_cliente_itau_chico_riendo.png" alt="chico riendo" height="415" width="510" layout="responsive">
         </amp-img>
       </div>
       <div>
@@ -890,51 +778,40 @@
         </amp-accordion>
       </div>
 
-      <div class="contacto">
-
-        <p class="como-podemos-ayudarte"> ¿Cómo podemos ayudarte?</p>
-        <p class="si-eres-cliente">Si eres cliente del banco no dudes en comunicarte con nosotros:</p>
 
 
-        <div class="telefonos-contacto">
-      
-          <a href="tel:+56226860888"
-                class="telefono">+562 2686 0888</a></amp-img> 
 
-         <a href="tel:60068608888"
-                class="telefono"><i
-                    class="icon_itau_phone_autorization"></i>600 686 08888</a>
+      <div>
+        <p>¿Cómo podemos ayudarte?</p>
+        <p>Si eres cliente del banco no dudes en comunicarte con nosotros:</p>
 
-        </div>    
 
-    </div>
+        <li><a href="tel:+56226860888" class="footer-item-phone fw-normal text-decoration-none text-nowrap"><i
+              class="icon_itau_phone_autorization"></i>+562 2686 0888</a></li>
+        <li><a href="tel:60068608888" class="footer-item-phone fw-normal text-decoration-none text-nowrap"><i
+              class="icon_itau_phone_autorization"></i>600 686 08888</a></li>
+      </div>
 
-    <div class="descarga-nuestra-aplicacion">
-        <p class="titulo-descarga-nuestra-aplicacion"> Descarga Nuestra Aplicación Itáu</p>
-        
+      <div>
+        <p> Descarga Nuestra Aplicación</p>
 
-        <div>
         <a target="_blank" rel="noreferrer" href="https://apps.apple.com/us/app/itau-chile/id636150714?ls=1"
-            class="btn-aplicaciones">
-            <img src="https://d1dzq2r60kxox4.cloudfront.net/uploads/592b68c7-f5de-46ba-9b0c-5a419029dc30/original/icon-appstore.svg"
-                alt="Itaú App Store" aria-label="App Store" class="lazy img-fluid" width="157" height="46">
+          class="btn-app-store d-inline-block img-fluid">
+          <img
+            src="https://d1dzq2r60kxox4.cloudfront.net/uploads/592b68c7-f5de-46ba-9b0c-5a419029dc30/original/icon-appstore.svg"
+            alt="Itaú App Store" aria-label="App Store" class="lazy img-fluid" width="157" height="46">
+
         </a>
 
         <a target="_blank" rel="noreferrer"
-            href="https://play.google.com/store/apps/details?id=com.konylabs.ItauMobileBank"
-            class="btn-aplicaciones">
-            <img src="https://d1dzq2r60kxox4.cloudfront.net/uploads/7ed1dc0b-7e5b-4180-ab7a-cd62cf4763aa/original/icon-google-play.svg"
-                alt="Itaú Google Play" aria-label="Google Play" class="lazy img-fluid" width="157"
-                height="46">
+          href="https://play.google.com/store/apps/details?id=com.konylabs.ItauMobileBank"
+          class="btn-google-play d-inline-block img-fluid">
+          <img
+            src="https://d1dzq2r60kxox4.cloudfront.net/uploads/7ed1dc0b-7e5b-4180-ab7a-cd62cf4763aa/original/icon-google-play.svg"
+            alt="Itaú Google Play" aria-label="Google Play" class="lazy img-fluid" width="157" height="46">
         </a>
-    </div>
 
-    </div>
-
-
-
-
- 
+      </div>
 
     </section>
  
